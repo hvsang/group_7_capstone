@@ -115,6 +115,7 @@ header .navbar {
     color: #fff;
     font-size: 1.95rem;
     margin-left: 30px;
+    cursor: pointer;
 }
 
 header .overlay {
