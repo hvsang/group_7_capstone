@@ -53,9 +53,20 @@ li {
     color: #fff;
 }
 
+.button--primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
 .button:hover {
     background-color: #fff;
     color: var(--primary-color);
+}
+
+.button--primary:hover {
+    background-color: rgba(255, 102, 0, 0.6);
+    border-color: rgba(255, 102, 0, 0.6);
+    color: #fff;
 }
 
 /* HEADER */
