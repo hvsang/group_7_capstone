@@ -110,7 +110,7 @@ header .navbar {
 
 .header__search {
     position: absolute;
-    right: 40px;
+    right: 25px;
     font-size: 0.9375rem;
     color: #333;
     cursor: pointer;
@@ -185,12 +185,14 @@ header .btn__close i {
     font-weight: 600;
     line-height: 64px;
     color: #fff;
+    max-width: 600px;
 }
 
 .carousel p {
     font-size: 1rem;
     line-height: 28px;
     color: #fff;
+    max-width: 600px;
 }
 
 /* ABOUT US */
