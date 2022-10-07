@@ -123,6 +123,11 @@ header .navbar {
 }
 
 .header__searchIcon {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.header__searchIcon i {
     color: #fff;
     font-size: 1.95rem;
     margin-left: 30px;
@@ -136,10 +141,13 @@ header .overlay {
     background-color: rgba(6, 3, 0, 0.77);
     top: 0;
     left: 0;
-    display: flex;
     justify-content: center;
     align-items: center;
     display: none;
+}
+
+header .overlay.openMenu {
+    display: flex;
 }
 
 header .overlay__text li {
