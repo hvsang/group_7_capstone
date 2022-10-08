@@ -8,4 +8,10 @@
     .restaurants__img img {
         height: 200px;
     }
+
+    .restaurants__left .overlay {
+        top: 48px;
+        left: 15px;
+        right: 15px;
+    }
 }
