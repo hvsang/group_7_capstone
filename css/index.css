@@ -4,6 +4,7 @@
     --primary-color: #ff6600;
     --bg-dark-light: #fff;
     --text-dark-light: #000;
+    --text-dark: #333;
 }
 
 * {
@@ -136,11 +137,11 @@ header .navbar {
 
 header .overlay {
     position: fixed;
-    width: 100%;
-    height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     top: 0;
     left: 0;
+    right: 0;
+    bottom: 0;
     justify-content: center;
     align-items: center;
     display: none;
@@ -207,14 +208,76 @@ header .btn__close i {
 
 .aboutUs {
     padding: 70px 0;
+    background-color: var(--bg-dark-light);
 }
 
 .aboutUs .title {
     margin-bottom: 25px;
 }
 
+.aboutUs .title h2 {
+    color: var(--text-dark-light);
+}
+
 .aboutUs__right {
     font-size: 1.125rem;
     line-height: 28px;
-    color: #333;
+    color: var(--text-dark);
+}
+
+/* RESTAURANTS */
+
+.restaurants {
+    background-color: var(--primary-color);
+}
+
+.restaurants__left {
+    position: relative;
+}
+
+.restaurants__img img {
+    width: 100%;
+    height: 605px;
+}
+
+.restaurants__left .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+}
+
+.restaurants__right .title p {
+    color: #fff;
+}
+
+.restaurants__right p {
+    font-size: 1.125rem;
+    line-height: 27px;
+    color: #fff;
+}
+
+.restaurants__item i {
+    font-size: 25px;
+    width: 70px;
+    height: 70px;
+    border-radius: 6px;
+    line-height: 70px;
+    color: var(--primary-color);
+    background-color: #fff;
+    text-align: center;
+    transition: all 0.5s;
+}
+
+.restaurants__item h3 {
+    font-size: 1.25rem;
+    line-height: 20px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.restaurants__item:hover i {
+    color: #ffc600;
 }
