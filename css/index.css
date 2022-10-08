@@ -237,16 +237,16 @@ header .btn__close i {
 
 .restaurants__img img {
     width: 100%;
-    height: 605px;
+    height: 700px;
 }
 
 .restaurants__left .overlay {
     position: absolute;
-    width: 100%;
-    height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     top: 0;
     left: 0;
+    right: 0;
+    bottom: 0;
 }
 
 .restaurants__right .title p {
