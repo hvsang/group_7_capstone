@@ -2,10 +2,10 @@
 
 :root {
     --primary-color: #ff6600;
-    --bg-dark-light: #fff;
-    --bg-light: #f7f7f7;
-    --text-dark-light: #000;
-    --text-dark: #333;
+    --bg-dark-light: #232220;
+    --bg-light: #232220;
+    --text-dark-light: #fff;
+    --text-dark: #fff;
 }
 
 * {
@@ -103,11 +103,14 @@ header .navbar {
     font-weight: 400;
     height: 45px;
     background-color: var(--bg-dark-light);
+    border: 1px solid var(--bg-dark-light);
 }
 
 .header__form:focus {
     border-color: #fff;
     box-shadow: none;
+    background-color: var(--bg-dark-light);
+    border: 1px solid var(--bg-dark-light);
 }
 
 .header__search {
@@ -287,7 +290,7 @@ header .btn__close i {
 
 .new {
     padding: 100px 0;
-    background-color: var(--bg-light);
+    background-color: #282828;
 }
 
 .new .title p {
@@ -357,7 +360,11 @@ header .btn__close i {
     padding: 40px 40px;
     border-radius: 8px;
     box-shadow: 0 25px 98px 0 rgba(0, 0, 0, 0.03);
-    border: 1px solid #eee;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.service__content:hover {
+    box-shadow: 0 25px 98px 0 rgba(0, 0, 0, 0.1);
 }
 
 .service__icon i {
@@ -365,7 +372,7 @@ header .btn__close i {
     height: 70px;
     line-height: 70px;
     color: var(--primary-color);
-    background-color: rgba(130, 115, 252, 0.05);
+    background-color: #282828;
     border-radius: 6px;
     transition: all 0.5s;
     font-size: 1.5625rem;
@@ -376,8 +383,9 @@ header .btn__close i {
     color: #fff;
 }
 
+.service__bottom,
 .service__text p {
-    color: rgba(22, 28, 45, 0.7);
+    color: #c2d0da;
     font-size: 1.125rem;
     line-height: 28px;
 }
@@ -385,17 +393,11 @@ header .btn__close i {
 .service__text h3 {
     font-size: 1.5rem;
     font-weight: 600;
-    color: #000;
+    color: #fff;
     cursor: pointer;
     transition: all 0.5s;
 }
 
 .service__text h3:hover {
     color: var(--primary-color);
-}
-
-.service__bottom {
-    color: rgba(22, 28, 45, 0.7);
-    font-size: 1.125rem;
-    line-height: 28px;
 }
