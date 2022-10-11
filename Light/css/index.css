@@ -376,6 +376,7 @@ header .btn__close i {
     color: #fff;
 }
 
+.service__bottom,
 .service__text p {
     color: rgba(22, 28, 45, 0.7);
     font-size: 1.125rem;
@@ -392,10 +393,4 @@ header .btn__close i {
 
 .service__text h3:hover {
     color: var(--primary-color);
-}
-
-.service__bottom {
-    color: rgba(22, 28, 45, 0.7);
-    font-size: 1.125rem;
-    line-height: 28px;
 }
