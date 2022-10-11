@@ -3,6 +3,7 @@
 :root {
     --primary-color: #ff6600;
     --bg-dark-light: #fff;
+    --bg-light: #f7f7f7;
     --text-dark-light: #000;
     --text-dark: #333;
 }
@@ -274,7 +275,7 @@ header .btn__close i {
 .restaurants__item h3 {
     font-size: 1.25rem;
     line-height: 20px;
-    font-weight: 700;
+    font-weight: 800;
     cursor: pointer;
 }
 
@@ -286,7 +287,7 @@ header .btn__close i {
 
 .new {
     padding: 100px 0;
-    background-color: var(--bg-dark-light);
+    background-color: var(--bg-light);
 }
 
 .new .title p {
@@ -343,4 +344,58 @@ header .btn__close i {
     font-size: 1.125rem;
     font-weight: 600;
     letter-spacing: 1px;
+}
+
+/* SERVICE */
+
+.service {
+    padding: 100px 0;
+    background-color: var(--bg-dark-light);
+}
+
+.service__content {
+    padding: 40px 40px;
+    border-radius: 8px;
+    box-shadow: 0 25px 98px 0 rgba(0, 0, 0, 0.03);
+    border: 1px solid #eee;
+}
+
+.service__icon i {
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    color: var(--primary-color);
+    background-color: rgba(130, 115, 252, 0.05);
+    border-radius: 6px;
+    transition: all 0.5s;
+    font-size: 1.5625rem;
+}
+
+.service__content:hover .service__icon i {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.service__text p {
+    color: rgba(22, 28, 45, 0.7);
+    font-size: 1.125rem;
+    line-height: 28px;
+}
+
+.service__text h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #000;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.service__text h3:hover {
+    color: var(--primary-color);
+}
+
+.service__bottom {
+    color: rgba(22, 28, 45, 0.7);
+    font-size: 1.125rem;
+    line-height: 28px;
 }

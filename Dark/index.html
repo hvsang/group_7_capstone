@@ -54,12 +54,12 @@
                         </form>
                     </nav>
                     <i class="header__light-dark fa fa-moon"></i>
-                    <button class="header__searchIcon js-openMenu">
+                    <button id="openMenu" class="header__searchIcon">
                         <i class="fa fa-bars"></i>
                     </button>
                 </div>
 
-                <div class="overlay js-overlay wow animate__animated animate__fadeIn">
+                <div id="header__overlay" class="overlay wow animate__animated animate__fadeIn">
                     <div>
                         <div class="overlay__text">
                             <ul class="text-center">
@@ -74,7 +74,7 @@
                                 <li><a href="#">Email</a></li>
                             </ul>
                         </div>
-                        <button class="btn__close js-btn__close">
+                        <button id="closeMenu" class="btn__close">
                             <i class="fa fa-times"></i>
                         </button>
                     </div>
@@ -229,7 +229,108 @@
     </section>
     <!-- SERVICE -->
     <!-- SANG -->
-    <section class="service"></section>
+    <section class="service">
+        <div class="container">
+            <div class="row">
+                <div class="service__item col-lg-4 col-md-6 col-sm-12 my-3">
+                    <div class="service__content">
+                        <div class="row align-items-center">
+                            <div class="service__icon col-4 text-center">
+                                <i class="fa fa-users"></i>
+                            </div>
+                            <div class="service__text col-8">
+                                <p class="mb-1">01</p>
+                                <h3 class="mb-0">Soup</h3>
+                            </div>
+                        </div>
+                        <p class="mt-3 mb-0 service__bottom">Lorem ipsum dolor sit amet consectetur ipsum elit. Qui
+                            eligendi vitae sit.
+                        </p>
+                    </div>
+                </div>
+                <div class="service__item col-lg-4 col-md-6 col-sm-12 my-3">
+                    <div class="service__content">
+                        <div class="row align-items-center">
+                            <div class="service__icon col-4 text-center">
+                                <i class="fa fa-shield-alt"></i>
+                            </div>
+                            <div class="service__text col-8">
+                                <p class="mb-1">02</p>
+                                <h3 class="mb-0">Drinks</h3>
+                            </div>
+                        </div>
+                        <p class="mt-3 mb-0 service__bottom">Lorem ipsum dolor sit amet consectetur ipsum elit. Qui
+                            eligendi vitae sit.
+                        </p>
+                    </div>
+                </div>
+                <div class="service__item col-lg-4 col-md-6 col-sm-12 my-3">
+                    <div class="service__content">
+                        <div class="row align-items-center">
+                            <div class="service__icon col-4 text-center">
+                                <i class="fa fa-thermometer-three-quarters"></i>
+                            </div>
+                            <div class="service__text col-8">
+                                <p class="mb-1">03</p>
+                                <h3 class="mb-0">Pizza</h3>
+                            </div>
+                        </div>
+                        <p class="mt-3 mb-0 service__bottom">Lorem ipsum dolor sit amet consectetur ipsum elit. Qui
+                            eligendi vitae sit.
+                        </p>
+                    </div>
+                </div>
+                <div class="service__item col-lg-4 col-md-6 col-sm-12 my-3">
+                    <div class="service__content">
+                        <div class="row align-items-center">
+                            <div class="service__icon col-4 text-center">
+                                <i class="fa fa-american-sign-language-interpreting"></i>
+                            </div>
+                            <div class="service__text col-8">
+                                <p class="mb-1">04</p>
+                                <h3 class="mb-0">Breakfast</h3>
+                            </div>
+                        </div>
+                        <p class="mt-3 mb-0 service__bottom">Lorem ipsum dolor sit amet consectetur ipsum elit. Qui
+                            eligendi vitae sit.
+                        </p>
+                    </div>
+                </div>
+                <div class="service__item col-lg-4 col-md-6 col-sm-12 my-3">
+                    <div class="service__content">
+                        <div class="row align-items-center">
+                            <div class="service__icon col-4 text-center">
+                                <i class="fa fa-paint-brush"></i>
+                            </div>
+                            <div class="service__text col-8">
+                                <p class="mb-1">05</p>
+                                <h3 class="mb-0">Lunch</h3>
+                            </div>
+                        </div>
+                        <p class="mt-3 mb-0 service__bottom">Lorem ipsum dolor sit amet consectetur ipsum elit. Qui
+                            eligendi vitae sit.
+                        </p>
+                    </div>
+                </div>
+                <div class="service__item col-lg-4 col-md-6 col-sm-12 my-3">
+                    <div class="service__content">
+                        <div class="row align-items-center">
+                            <div class="service__icon col-4 text-center">
+                                <i class="fa fa-eraser"></i>
+                            </div>
+                            <div class="service__text col-8">
+                                <p class="mb-1">06</p>
+                                <h3 class="mb-0">Dinner</h3>
+                            </div>
+                        </div>
+                        <p class="mt-3 mb-0 service__bottom">Lorem ipsum dolor sit amet consectetur ipsum elit. Qui
+                            eligendi vitae sit.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- DELICIOUSNESS -->
     <section class="deliciousness"></section>
     <!-- VIDEO -->
@@ -245,20 +346,17 @@
 
     <!-- JS SHOW CLOSE MENU -->
     <script>
-        const openMenu = document.querySelector('.js-openMenu');
-        const overlay = document.querySelector('.js-overlay');
-        const closeMenu = document.querySelector('.js-btn__close');
+        const openMenu = document.getElementById("openMenu");
+        const overlay = document.getElementById("header__overlay");
+        const closeMenu = document.getElementById("closeMenu");
 
-        function showMenu() {
+        openMenu.onclick = function () {
             overlay.classList.add("open");
         }
 
-        function hideMenu() {
+        closeMenu.onclick = function () {
             overlay.classList.remove("open");
         }
-
-        openMenu.addEventListener('click', showMenu);
-        closeMenu.addEventListener('click', hideMenu);
     </script>
     <!-- JQUERY -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"

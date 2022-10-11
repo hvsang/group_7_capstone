@@ -1,0 +1,401 @@
+/* GLOBAL */
+
+:root {
+    --primary-color: #ff6600;
+    --bg-dark-light: #fff;
+    --bg-light: #f7f7f7;
+    --text-dark-light: #000;
+    --text-dark: #333;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-size: 16px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.title p {
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 1px;
+    color: var(--primary-color);
+    font-family: 'Pacifico', cursive;
+}
+
+.title h2 {
+    font-size: 2.375rem;
+    line-height: 48px;
+    font-weight: 600;
+}
+
+.button {
+    padding: 12px 45px;
+    font-size: 1rem;
+    line-height: 30px;
+    font-weight: 700;
+    border-radius: 5px;
+    border: 2px solid #fff;
+    transition: all 0.5s;
+    background-color: transparent;
+    color: #fff;
+}
+
+.button--primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.button:hover {
+    background-color: #fff;
+    color: var(--primary-color);
+}
+
+.button--primary:hover {
+    background-color: rgba(255, 102, 0, 0.6);
+    border-color: rgba(255, 102, 0, 0.6);
+    color: #fff;
+}
+
+/* HEADER */
+
+header {
+    padding: 40px 0;
+    width: 100%;
+    position: absolute;
+    z-index: 100;
+}
+
+header .navbar {
+    padding: 8px 0;
+}
+
+.header__logo a {
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+.header__right {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+.header__form {
+    position: relative;
+    padding: 10px 50px 10px 20px;
+    font-size: 1rem;
+    font-weight: 400;
+    height: 45px;
+    background-color: var(--bg-dark-light);
+}
+
+.header__form:focus {
+    border-color: #fff;
+    box-shadow: none;
+}
+
+.header__search {
+    position: absolute;
+    right: 25px;
+    font-size: 0.9375rem;
+    color: #333;
+    cursor: pointer;
+}
+
+.header__light-dark {
+    color: #fff;
+    font-size: 1.5rem;
+    margin-left: 20px;
+}
+
+.header__searchIcon {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.header__searchIcon i {
+    color: #fff;
+    font-size: 1.95rem;
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+header .overlay {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+header .overlay.open {
+    display: flex;
+}
+
+header .overlay__text li {
+    margin: 20px 0;
+}
+
+header .overlay__text a {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #fff;
+    transition: all 0.5s;
+}
+
+header .overlay__text a:hover {
+    color: var(--primary-color);
+}
+
+header .btn__close i {
+    position: absolute;
+    font-size: 20px;
+    color: #fff;
+    top: 50px;
+    right: 50px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* CAROUSEL */
+
+.carousel {
+    background-image: linear-gradient(to right, #ff6600, hsl(30deg 100% 1% / 20%)), url("../img/banner1.jpg");
+    padding: 180px 0 100px;
+    background-attachment: fixed;
+}
+
+.carousel h2 {
+    font-size: 3.375rem;
+    font-weight: 600;
+    line-height: 64px;
+    color: #fff;
+    max-width: 600px;
+}
+
+.carousel p {
+    font-size: 1rem;
+    line-height: 28px;
+    color: #fff;
+    max-width: 600px;
+}
+
+/* ABOUT US */
+
+.aboutUs {
+    padding: 70px 0;
+    background-color: var(--bg-dark-light);
+}
+
+.aboutUs .title {
+    margin-bottom: 25px;
+}
+
+.aboutUs .title h2 {
+    color: var(--text-dark-light);
+}
+
+.aboutUs__right {
+    font-size: 1.125rem;
+    line-height: 28px;
+    color: var(--text-dark);
+}
+
+/* RESTAURANTS */
+
+.restaurants {
+    background-color: var(--primary-color);
+}
+
+.restaurants__left {
+    position: relative;
+}
+
+.restaurants__img img {
+    width: 100%;
+    height: 700px;
+}
+
+.restaurants__left .overlay {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.restaurants__right .title p {
+    color: #fff;
+}
+
+.restaurants__right p {
+    font-size: 1.125rem;
+    line-height: 27px;
+    color: #fff;
+}
+
+.restaurants__item i {
+    font-size: 25px;
+    width: 70px;
+    height: 70px;
+    border-radius: 6px;
+    line-height: 70px;
+    color: var(--primary-color);
+    background-color: #fff;
+    text-align: center;
+    transition: all 0.5s;
+}
+
+.restaurants__item h3 {
+    font-size: 1.25rem;
+    line-height: 20px;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.restaurants__item:hover i {
+    color: #ffc600;
+}
+
+/* NEW */
+
+.new {
+    padding: 100px 0;
+    background-color: var(--bg-light);
+}
+
+.new .title p {
+    margin-bottom: 0;
+}
+
+.new .title h2 {
+    color: var(--text-dark-light);
+}
+
+.new__item {
+    cursor: pointer;
+}
+
+.new__img {
+    position: relative;
+}
+
+.new__img::after {
+    content: "";
+    position: absolute;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.53) 69%, rgba(0, 0, 0, 0.76) 100%);
+    border-radius: 0 0 6px 6px;
+    bottom: 0;
+    left: 0px;
+    width: 100%;
+    height: 40%;
+}
+
+.new__img img {
+    width: 100%;
+    border-radius: 6px;
+    transition: all 0.5s;
+}
+
+.new__img img:hover {
+    opacity: 0.85;
+}
+
+.new__text {
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+}
+
+.new__text h3 {
+    font-size: 1.375rem;
+    line-height: 30px;
+    font-weight: 700;
+}
+
+.new__text p {
+    color: #ffc600;
+    font-size: 1.125rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+/* SERVICE */
+
+.service {
+    padding: 100px 0;
+    background-color: var(--bg-dark-light);
+}
+
+.service__content {
+    padding: 40px 40px;
+    border-radius: 8px;
+    box-shadow: 0 25px 98px 0 rgba(0, 0, 0, 0.03);
+    border: 1px solid #eee;
+}
+
+.service__icon i {
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    color: var(--primary-color);
+    background-color: rgba(130, 115, 252, 0.05);
+    border-radius: 6px;
+    transition: all 0.5s;
+    font-size: 1.5625rem;
+}
+
+.service__content:hover .service__icon i {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.service__text p {
+    color: rgba(22, 28, 45, 0.7);
+    font-size: 1.125rem;
+    line-height: 28px;
+}
+
+.service__text h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #000;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.service__text h3:hover {
+    color: var(--primary-color);
+}
+
+.service__bottom {
+    color: rgba(22, 28, 45, 0.7);
+    font-size: 1.125rem;
+    line-height: 28px;
+}
