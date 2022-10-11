@@ -361,6 +361,7 @@ header .btn__close i {
     border-radius: 8px;
     box-shadow: 0 25px 98px 0 rgba(0, 0, 0, 0.03);
     border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.5s;
 }
 
 .service__content:hover {
