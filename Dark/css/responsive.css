@@ -1,0 +1,79 @@
+@media (max-width: 576px) {
+  .header__right nav {
+    display: none;
+  }
+}
+
+@media (min-width: 992px) {
+  #ngoc .container {
+    max-width: 960px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  #ngoc .container {
+    max-width: 1140px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media (min-width: 1280px) {
+  #ngoc .container {
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+/*  */
+@media (max-width: 992px) {
+  .deliciousness_sevrvice {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .button_right,
+  .button_left {
+    padding: 10px 21px;
+  }
+
+  @media (max-width: 1080px) {
+
+    #ngoc h1 {
+      font-size: 32px !important;
+      line-height: 40px;
+    }
+  }
+  @media (max-width: 640px){
+    #deliciousness .deliciousness_item h4{
+      font-size: 2em;
+    }
+  }
+  @media (max-width:600px) {
+    #ngoc h1 {
+      font-size: 30px !important;
+      line-height: 38px;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 26px;
+    }
+
+    #ngoc .title>p {
+      font-size: 16px;
+    }
+  }
+}
+@media (max-width:992px) {
+  footer .footer_item1 ul li{
+    margin-top: 20px;
+    text-align: center;
+  }
+}
+  
