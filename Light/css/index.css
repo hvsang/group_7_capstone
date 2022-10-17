@@ -235,22 +235,25 @@ header .btn__close i {
     background-color: var(--primary-color);
 }
 
-.restaurants__left {
+.restaurants__img {
+    background-image: url("../img/banner3.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     position: relative;
+    min-height: 610px;
+    z-index: 1;
 }
 
-.restaurants__img img {
-    width: 100%;
-    height: 700px;
-}
-
-.restaurants__left .overlay {
+.restaurants__img::before {
+    content: "";
+    background: rgba(16, 15, 19, 0.46);
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.5);
     top: 0;
+    min-height: 100%;
     left: 0;
     right: 0;
-    bottom: 0;
+    z-index: -1;
 }
 
 .restaurants__right .title p {
