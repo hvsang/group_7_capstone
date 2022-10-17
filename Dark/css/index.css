@@ -104,10 +104,12 @@ header .navbar {
     height: 45px;
     background-color: var(--bg-dark-light);
     border: 1px solid var(--bg-dark-light);
+    color: #c2d0da;
 }
 
 .header__form:focus {
     border-color: #fff;
+    color: #c2d0da;
     box-shadow: none;
     background-color: var(--bg-dark-light);
     border: 1px solid var(--bg-dark-light);
@@ -117,7 +119,7 @@ header .navbar {
     position: absolute;
     right: 25px;
     font-size: 0.9375rem;
-    color: #333;
+    color: #c2d0da;
     cursor: pointer;
 }
 
