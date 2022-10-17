@@ -188,6 +188,9 @@ header .btn__close i {
     background-image: linear-gradient(to right, #ff6600, hsl(30deg 100% 1% / 20%)), url("../img/banner1.jpg");
     padding: 180px 0 100px;
     background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .carousel h2 {
