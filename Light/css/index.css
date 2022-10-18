@@ -18,6 +18,7 @@ html,
 body {
     font-size: 16px;
     font-family: 'Quicksand', sans-serif;
+    overflow: auto;
 }
 
 a:hover {
@@ -263,7 +264,7 @@ header .btn__close i {
 .restaurants__right p {
     font-size: 1.125rem;
     line-height: 27px;
-    color: #fff;
+    color: #ffdfc9;
 }
 
 .restaurants__item i {
