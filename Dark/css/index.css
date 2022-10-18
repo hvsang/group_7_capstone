@@ -270,6 +270,10 @@ header .btn__close i {
     color: #fff;
 }
 
+.restaurants__right .title h2 {
+    color: #fff;
+}
+
 .restaurants__right p {
     font-size: 1.125rem;
     line-height: 27px;
