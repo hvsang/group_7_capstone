@@ -318,7 +318,7 @@ header .btn__close i {
 
 .new {
     padding: 100px 0;
-    background-color: #282828;
+    background-color: #f7f7f7;
 }
 
 .new .title p {
@@ -401,7 +401,7 @@ header .btn__close i {
     height: 70px;
     line-height: 70px;
     color: var(--primary-color);
-    background-color: #282828;
+    background-color: rgba(130, 115, 252, 0.05);
     border-radius: 6px;
     transition: all 0.5s;
     font-size: 1.5625rem;
@@ -414,7 +414,7 @@ header .btn__close i {
 
 .service__bottom,
 .service__text p {
-    color: #c2d0da;
+    color: rgba(22, 28, 45, 0.7);
     font-size: 1.125rem;
     line-height: 28px;
 }
@@ -422,7 +422,6 @@ header .btn__close i {
 .service__text h3 {
     font-size: 1.5rem;
     font-weight: 600;
-    color: #fff;
     cursor: pointer;
     transition: all 0.5s;
 }
