@@ -251,6 +251,10 @@ header .btn__close i {
     background-color: var(--primary-color);
 }
 
+.restaurants .row {
+    margin-right: auto;
+}
+
 .restaurants__img {
     background-image: url("../img/banner3.jpg");
     background-repeat: no-repeat;
