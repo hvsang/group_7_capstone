@@ -283,6 +283,11 @@ header .btn__close i {
     line-height: 20px;
     font-weight: 800;
     cursor: pointer;
+    color: var(--text-dark-light);
+}
+
+.restaurants__item h3:hover {
+    opacity: 0.9;
 }
 
 .restaurants__item:hover i {
