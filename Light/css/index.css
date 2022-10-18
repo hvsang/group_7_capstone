@@ -241,7 +241,7 @@ header .btn__close i {
     background-position: center;
     background-size: cover;
     position: relative;
-    min-height: 610px;
+    min-height: 600px;
     z-index: 1;
 }
 
