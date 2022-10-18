@@ -19,8 +19,9 @@
 
 html,
 body {
-  font-size: 16px;
-  font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+    font-family: 'Quicksand', sans-serif;
+    overflow: auto;
 }
 
 a:hover {
@@ -142,12 +143,12 @@ header .navbar {
 .header__searchIcon {
     background-color: transparent;
     border-color: transparent;
+    margin-left: 30px;
 }
 
 .header__searchIcon i {
     color: #fff;
     font-size: 1.95rem;
-    margin-left: 30px;
     cursor: pointer;
 }
 
@@ -256,7 +257,7 @@ header .btn__close i {
     background-position: center;
     background-size: cover;
     position: relative;
-    min-height: 610px;
+    min-height: 600px;
     z-index: 1;
 }
 
@@ -278,7 +279,7 @@ header .btn__close i {
 .restaurants__right p {
     font-size: 1.125rem;
     line-height: 27px;
-    color: #fff;
+    color: #ffdfc9;
 }
 
 .restaurants__item i {
@@ -298,6 +299,11 @@ header .btn__close i {
     line-height: 20px;
     font-weight: 800;
     cursor: pointer;
+    color: var(--text-dark-light);
+}
+
+.restaurants__item h3:hover {
+    opacity: 0.9;
 }
 
 .restaurants__item:hover i {
