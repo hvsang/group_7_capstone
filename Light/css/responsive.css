@@ -37,7 +37,7 @@
 
 /*  */
 @media (max-width: 992px) {
-.deliciousness_sevrvice {
+#deliciousness .deliciousness_item {
   margin-top: 0;
 }
 }
