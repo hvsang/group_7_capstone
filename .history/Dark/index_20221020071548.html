@@ -61,7 +61,7 @@
                             <i class="header__search fa fa-search"></i>
                         </form>
                     </nav>
-                    <i class="header__light-dark fa fa-moon"></i>
+                    <i class="header__light-dark fa fa-sun"></i>
                     <button id="openMenu" class="header__searchIcon">
                         <i class="fa fa-bars"></i>
                     </button>
@@ -671,7 +671,7 @@
         </div>
     </section>
     <!-- BACK TO TOP -->
-    <button onclick="topFunction()" id="movetop" title="Go to top" style="display: none;">
+    <button onclick="topFunction()" id="movetop" title="Go to top" style="display: block;">
         ⤴
     </button>
     <!-- JQUERY -->
@@ -772,7 +772,6 @@
                 document.getElementById("movetop").style.display = "none";
             }
         }
-
         function topFunction() {
             document.body.scrollTop = 0;
             document.documentElement.scrollTop = 0;
